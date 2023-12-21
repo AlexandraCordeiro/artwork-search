@@ -27,7 +27,6 @@ The API offered by the Art Institute of Chicago delivers data in JSON format thr
 ###### Technologies
 - React.js
 
-
 ###### Acknowledgments
 
 A big thank you to the Art Institute Of Chicago
