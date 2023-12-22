@@ -1,6 +1,12 @@
 # artwork-search
 Website for searching artworks made available through the Art Institute of Chicago's API. 
 
+[Link to website](https://search-artworks.vercel.app/)
+
+<center>
+    <img src="./images/demo.png">
+</center>
+
 ### Motivation
 This project was carried out as part of the Web Development course. The goal is to explore data access through a Web API, incorporating various features such as: general presentation of results, data filtering, and sorting.
 
@@ -25,13 +31,14 @@ The API offered by the Art Institute of Chicago delivers data in JSON format thr
 
 
 ###### Technologies
-- React.js
+- [React.js](https://react.dev/learn)
+- [Evergreen UI](https://evergreen.segment.com/) for UI components
+- [npm](https://www.npmjs.com/) to install dependencies
 
-###### Deplyment
-- Vercel
+###### Deployment
+- [Vercel](https://vercel.com)
 
 ###### Acknowledgments
 
 A big thank you to the Art Institute Of Chicago
 
-<!-- ### Web Hosting -->

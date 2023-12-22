@@ -28,11 +28,11 @@ export default function SortBy({category, onChange}) {
     return (
         <ThemeProvider theme={newTheme}>
             <Select className='order' value={category} onChange={onChange} width='100%' height='7vh' style={customStyles}>
+                <option value="Sort: Default">Sort: Default</option>
                 <option value="Sort: By Date" selected>
                 Sort: By Date
                 </option>
                 <option value="Sort: By Title">Sort: By Title</option>
-                <option value="Sort: Default">Sort: Default</option>
             </Select>
         </ThemeProvider>
     )

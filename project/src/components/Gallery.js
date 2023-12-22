@@ -1,4 +1,3 @@
-import React, { useState, useEffect} from 'react';
 import '../App.css'
 let BASE_IMG_ENDPOINT = '';
 let MONTHS = {'01': 'Jan', '02': 'Feb', '03': 'Mar', '04': 'Apr', '05': 'May', '06': 'Jun', '07': 'Jul', '08': 'Aug', '09': 'Sep', '10': 'Oct', '11': 'Nov', '12': 'Dec'}
@@ -35,6 +34,7 @@ function ArtworkItem({ result }) {
         <div className='gallery-item'>
             <div className='img-container'>
                 <img
+                    alt='Exhibition'
                     id={result.image_id}
                     src={source}
                     onError={(e) => {
@@ -56,16 +56,6 @@ function ArtworkItem({ result }) {
             </div>
         </div>
     );
-}
-
-
-
-
-
-
-function convertToYear(date) {
-    let newDate = date.slice(0, 7).split('-')
-    return newDate[0]
 }
 
 function convertDate(date) {
@@ -96,7 +86,13 @@ function ExhibitionItem({result}) {
     return (
         <div className='gallery-item'>
            <div className='img-container'>
-                    {<img className='prevent-select' id={result.image_id} src={source} ></img>}
+                    {<img alt='Artwork' className='prevent-select' id={result.image_id} src={source} onError={
+                       (e) => {
+                        e.target.onerror = null;
+                        e.target.src = 'https://i.postimg.cc/7hDnpvcz/image-not-found-icon.png';
+                        e.target.className='default-img'
+                    }
+                    }></img>}
                 </div>
 
                 <div className='info-container'>
