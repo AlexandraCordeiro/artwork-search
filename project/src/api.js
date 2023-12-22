@@ -1,6 +1,6 @@
 const LIMIT = 60
-const ARTWORK_FIELDS = 'id,title,image_id,date_display,thumbnail,artist_title,boost_rank,date_end,has_not_been_viewed_much,color,alt_image_ids'
-const EXHIBITION_FIELDS = 'id,title,image_id,alt_image_ids,aic_start_at,aic_end_at,status,short_description,image_url'
+const ARTWORK_FIELDS = 'id,title,image_id,date_display,artist_title,date_end,color'
+const EXHIBITION_FIELDS = 'id,title,image_id,aic_start_at,aic_end_at,status,short_description,image_url'
 
 export const search = async (query, category) => {
     let apiUrl
