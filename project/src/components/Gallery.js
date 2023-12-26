@@ -17,13 +17,13 @@ function ArtworkItem({ result }) {
         color = 'white'
     }
     const dominantColor = {
-        height: '1vw',
-        width: '1vw',
+        height: '10px',
+        width: '10px',
         backgroundColor: `${color}`,
         borderRadius: '50%',
         marginRight: '1.5vh',
         position: 'relative',
-        top: '0.75vw'
+        top: '1.5vh'
         
     };
 
